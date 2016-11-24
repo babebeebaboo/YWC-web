@@ -37,8 +37,8 @@ function startAnimationText(div, text, next)
 }
 
 function manageLayout() {
-	var viewportWidth = $(window).innerWidth();
-	var viewportHeight = $(window).innerHeight();
+	var viewportWidth = $(window).outerWidth();
+	var viewportHeight = $(window).outerHeight();
 
 	$("#div_app")
 		.height(viewportHeight)
