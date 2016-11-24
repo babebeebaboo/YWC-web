@@ -46,17 +46,17 @@ function manageLayout() {
 
 	$('#div_webmaster').offset({
 		top: (viewportHeight / 2.0) - ($('#div_webmaster').height() / 2.0),
-		left: (viewportWidth / 2.0) - ($('#div_webmaster').width() / 2.0)
+		left: (viewportWidth / 2.0) - ($('#div_webmaster').width() / 2.0)-50
 	});
 
 	$('#div_young').offset({
 		top: (viewportHeight / 2.0) - ($('#div_young').height() / 2.0) - 100,
-		left: (viewportWidth / 2.0) - ($('#div_young').width() / 2.0)
+		left: (viewportWidth / 2.0) - ($('#div_young').width() / 2.0)-50
 	});
 
 	$('#div_camp').offset({
 		top: (viewportHeight / 2.0) - ($('#div_camp').height() / 2.0) + 100,
-		left: (viewportWidth / 2.0) - ($('#div_camp').width() / 2.0)
+		left: (viewportWidth / 2.0) - ($('#div_camp').width() / 2.0)-50
 	});
 }
 
