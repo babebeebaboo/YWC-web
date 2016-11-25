@@ -1,4 +1,4 @@
-function startAnimationText(div, text, next)
+function startAnimationText(div, text/*, manage*/,next)
 {
 	var step = $(div).width() / text.length;
 
@@ -32,8 +32,10 @@ function startAnimationText(div, text, next)
 		console.log('transitionend');
 		func();
 	});
+	/*manage*/
 
 	func();
+
 }
 
 function manageLayout() {
@@ -74,12 +76,11 @@ $(document).ready(function() {
 		.height($(window).innerHeight())
 		.width($(window).innerWidth());
 
-	manageLayout();
+		manageLayout();
 
-	startAnimationText($('#div_young'), "YOUNG", function() {
-		startAnimationText($('#div_webmaster'), "WEBMASTER", function() {
-			startAnimationText($('#div_camp'), "CAMP");
+	startAnimationText($('#div_young'), "YOUNG"/*,manageLayout()*/, function() {
+		startAnimationText($('#div_webmaster'), "WEBMASTER"/*,manageLayout()*/, function() {
+			startAnimationText($('#div_camp'), "CAMP"/*,manageLayout()*/);
 		});
 	});
-	/*manageLayout();*/
 });
