@@ -2,7 +2,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	font-family: 'Berlin Sans FB';
+	font-family: 'Itim','Berlinsans';
 }
 
 #div_app
@@ -71,4 +71,22 @@ body
   {
     -webkit-filter: hue-rotate(-360deg);
   }
+}
+
+@font-face {
+    font-family: Itim;
+    src: url(Itim-Regular.ttf);
+	font-weight:400;
+}
+
+@font-face {
+    font-family: Berlinsans;
+    src: url(BRLNSR.ttf);
+	font-weight:400;
+}
+
+@font-face {
+    font-family: Berlinsans;
+    src: url(BRLNSDB.ttf);
+	font-weight:700;
 }
